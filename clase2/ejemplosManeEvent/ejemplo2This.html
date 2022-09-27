@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>JavaScript</title>
+        <style type="text/css">
+            div {
+                width: 300px;
+                height: 150px;
+                border: 50px solid blue;
+            }
+        </style>
+    </head>
+
+    <body>
+       
+        <div id="contenidos" style="width:150px; height:60px; border:thin solid silver"
+        onmouseover="document.getElementById('contenidos').style.borderColor='black';"
+        onmouseout="document.getElementById('contenidos').style.borderColor='silver';">
+
+         <!--
+            Se reduce mucho con esto
+            <div onmouseover="this.style.borderColor='red';" onmouseout="this.style.borderColor='blue';"></div>
+        -->
+
+    </body>
+
+    </html>

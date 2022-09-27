@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+    <html lang="es"> 
+        <head> 
+        <meta charset="UTF-8" /> 
+        <title>JavaScript</title> 
+        <script type="text/javascript"> 
+            var parrafos; 
+            
+            function ejecutar () { 
+                parrafos = document.getElementsByName("especial"); 
+                for(var i=0; i<parrafos.length; i++) { 
+                    var parrafo = parrafos[i].innerHTML; 
+                    window.alert (parrafo); 
+                } 
+            } 
+        </script> 
+        </head> 
+        <body> 
+            <p name="normal">Un párrafo normal</p> 
+            <p name="especial">Contenido especial 1</p> 
+            <p name="especial">Contenido especial 2</p> 
+            <button onclick="ejecutar();"> Mostrar Párrafos Especiales</button> 
+        </body> 
+    </html> 
