@@ -94,19 +94,30 @@ function arrayMapi (lista, suma) {
 function suma2 (n) {
     return n+2;
 }
- //NI IDEA
-var lista = [1,2,3,1,2,3,1,2,3,4,5,6];
-function eliminarDuplicados (lista) {
-    var listaLimpia=[];
-    for (var i = 0; i <= lista.length; i++) {
-        for (var j = 0; j < (lista.length - i); j++) {
-            if (lista[j] !== lista[j+1]) {
-                listaLimpia = lista.slice(j, j+1);
-            }
-        }
-    }
-    return listaLimpia;
-}
+ //limpiar
+ var lista = [1,2,3,1,2,3,1,2,3,4,5,6];
+ function eliminarDuplicados (lista) {
+     var aux;
+     for (var i = 0; i <= lista.length; i++) {
+         for (var j = 0; j < (lista.length - i); j++) {
+             if (lista[j] > lista[j+1]) {
+                 aux = lista[j+1];
+                 lista[j+1] = lista [j];
+                 lista[j] = aux;
+             }
+         }
+     }
+     for (var i = 0; i <= lista.length; i++) {
+         for (var j = 0; j < (lista.length - i); j++) {
+             if (lista[j] == lista[j+1]) {
+                 lista.splice(j,1);
+             }
+         }
+     }
+     return lista;
+ }
+
+
 // ITERACIONES PROYECTO
 //ARRAYS
 var arrayNumerosNeg=[0, -1, -2, -3, -4, -5, -6, -7, -8, -9];
