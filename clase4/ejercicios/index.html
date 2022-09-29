@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <button onclick="creaObjeto (4,10);">Mira el objeto</button>
+   <div id="container">
+        <div class="column">
+            <form id="data">
+                <div>
+                    <label for="dim1"><span>Dimension 1: </span><input id="dim1" type="number"></label>
+                    <label for="dim2"><span>Dimension 2: </span><input id="dim2" type="number"></label>
+                </div>
+                <div>
+                   <!--<button type="submit" value="Submit" onclick="creaObjeto(document.getElementById('dim1').value,document.getElementById('dim2').value)">Crea el objeto</button>-->
+                    <input type="button" value="Submit" onclick="pasaDatos ()">Crea el objeto</input>
+                   
+                </div>
+            </form>
+        </div>
+        <div class="column"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

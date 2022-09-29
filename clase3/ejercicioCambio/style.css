@@ -1,0 +1,100 @@
+
+body {
+    background-color: rgb(219, 215, 209);
+}
+
+h1, h5 {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h4, p {
+    font-size: 12px;
+    font-family: 'Silkscreen', cursive;
+}
+
+span {
+    color: rgb(255, 83, 83)
+}
+h5 {
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 5px;
+    font-family: 'JetBrains Mono', monospace;
+
+}
+h1+div {
+    height: fit-content;
+    width: 250;
+    margin: 0 auto 0 auto;
+}
+.teclado {
+    display:flex;
+    justify-content: center;
+    height: 50px;
+    width: 250px;
+    justify-content: center;
+    margin: auto auto auto auto;
+}
+
+#screen {
+    
+    height: 150px;
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 3px rgb(133, 85, 19);
+    margin: auto auto auto auto;
+    padding: 10px 20px 10px 20px;
+}
+button {
+    background-color: black;
+    color: white;
+    width: 40px;
+    margin: 2px;
+    border: solid 3px rgb(133, 85, 19);
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+#teclaNumericas {
+   visibility: hidden;
+    
+}
+#comenzar{
+    margin: 0 auto 0 auto;
+    width: 400px;
+    justify-content: center;
+    padding: auto auto auto auto;
+    display:flex;
+}
+
+.botonLargo {
+    width: 130px;
+}
+
+#billetes {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+}
+
+#teclasMonedas {
+    visibility: hidden;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+}
+ 

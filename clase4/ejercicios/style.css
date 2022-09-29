@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(227, 227, 255);
+}
+
+button, input{
+    background-color: azure;
+    border: 3px solid grey;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+input{
+    background-color: azure;
+    border: 3px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}

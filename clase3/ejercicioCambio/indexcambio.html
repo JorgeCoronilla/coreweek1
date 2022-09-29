@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&family=Silkscreen&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <h1>Cajero</h1>
+    <div id="billetes">
+        <h5>500</h5>
+        <h5>200</h5>
+        <h5>100</h5>
+        <h5>50</h5>
+        <h5>20</h5>
+        <h5>10</h5>
+        <h5>5</h5>
+        <h5>2</h5>
+        <h5>1</h5>
+        <h5>0.50</h5>
+        <h5>0.20</h5>
+        <h5>0.10</h5>
+        <h5>0.05</h5>
+        <h5>0.02</h5>
+        <h5>0.01</h5>
+    </div>
+    <div id="screen">
+        <h4>Lea las instrucciones:</h4>
+        <p>Pulse comenzar</p>
+    </div>
+
+    <div id="comenzar"><button class="botonLargo" onclick="key ('Start');">comenzar</button></div>
+
+    <div id="container">
+
+        <div id="teclaNumericas">
+            <div>
+                
+                <div class="teclado"><button onclick="key ('1');">1</button><button
+                        onclick="key ('2');">2</button><button onclick="key ('3');">3</button></div>
+                <div class="teclado"><button onclick="key ('4');">4</button><button
+                        onclick="key ('5');">5</button><button onclick="key ('5');">6</button></div>
+                <div class="teclado"><button onclick="key ('7');">7</button><button
+                        onclick="key ('8');">8</button><button onclick="key ('9');">9</button></div>
+                <div class="teclado"><button onclick="key ('0');">0</button><button
+                        onclick="key ('.');">.</button><button onclick="key ('I');">-></button></div>
+                <!-- <div class="teclado"><button id="comenzar" onclick="key ('Start');">comenzar</button></div>-->
+            </div>
+        </div>
+        <div id="teclasMonedas">
+            <div><button class="botonLargo terminado1" onclick="inputPago (0);">Terminado</button></div>
+            <div class="teclado"><button onclick="inputPago (500);">500</button><button
+                    onclick="inputPago (200);">200</button><button onclick="inputPago (100);">100</button></div>
+            <div class="teclado"><button onclick="inputPago (50);">50</button><button
+                    onclick="inputPago (20);">20</button><button onclick="inputPago (10);">10</button></div>
+            <div class="teclado"><button onclick="inputPago (5);">5</button><button
+                    onclick="inputPago (2);">2</button><button onclick="inputPago (1);">1</button></div>
+            <div class="teclado"><button onclick="inputPago (0.50);">0.50</button><button
+                    onclick="inputPago (0.20);">0.20</button><button onclick="inputPago (0.10);">0.10</button></div>
+            <div class="teclado"><button onclick="inputPago (0.05);">0.05</button><button
+                    onclick="inputPago (0.02);">0.02</button><button onclick="inputPago (0.01);">0.01</button></div>
+        </div>
+
+    </div>
     <script src="script.js"></script>
+
 </body>
+
 </html>
