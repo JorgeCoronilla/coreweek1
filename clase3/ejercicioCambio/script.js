@@ -5,11 +5,28 @@ const billetesMonedas = [500, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05
 var caja = inicializarEfectivo(1, 5, 0, 1, 4, 8, 2, 5, 4, 0, 0, 1, 2, 3, 1);
 
 function key(valor) {
-    if (valor == 'Start') {
+    if (valor == 'Admin'){
+        document.getElementsByClassName("comenzar")[0].style = "visibility: hidden;";
+        document.getElementsByClassName("comenzar")[1].style = "visibility: hidden;";
+        document.getElementById("adminPanel").style = "visibility: visible;";
+    } else if (valor == 'Admin2'){
+        alert("WEEEE");
+        document.getElementsByClassName("comenzar")[0].style = "visibility: hidden;";
+        document.getElementsByClassName("comenzar")[1].style = "visibility: hidden;";
+        document.getElementById("setCaja").style = "visibility: visible;";
+
+        if (checkUser(document.getElementById('user').value, document.getElementById('password').value)) {
+            document.getElementById("setCaja").style = "visibility: visible;";
+            document.getElementsByClassName("comenzar")[0].style = "visibility: hidden;";
+            document.getElementsByClassName("comenzar")[1].style = "visibility: hidden;";
+        } else {document.querySelector("p").innerText = "Usuario o password no válido";}
+           
+    } else if (valor == 'Start') {
         valorScreen = "";
         document.querySelector("h4").innerText = "Introduzca el importe a pagar y pulse ->";
         document.getElementById("teclaNumericas").style = "visibility: visible;";
-        document.getElementById("comenzar").style = "visibility: hidden;";
+        document.getElementsByClassName("comenzar")[0].style = "visibility: hidden;";
+        document.getElementsByClassName("comenzar")[1].style = "visibility: hidden;";
         document.querySelector("p").innerText = "";
     } else if (valor == 'I') {
         precio = parseFloat(valorScreen);
@@ -21,6 +38,15 @@ function key(valor) {
         valorScreen += valor;
         document.querySelector("p").innerText = valorScreen;
     }
+}
+
+function checkUser(user, password){
+    
+    return (user==='Jorge' && password==="batman17")
+}
+
+function setCaja () {
+
 }
 
 function inputPago(moneda) {

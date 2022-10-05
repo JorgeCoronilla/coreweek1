@@ -2,74 +2,156 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&family=Silkscreen&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&family=Silkscreen&display=swap"
+                rel="stylesheet">
 </head>
 
 <body>
-    <h1>Cajero</h1>
-    <div id="billetes">
-        <h5>500</h5>
-        <h5>200</h5>
-        <h5>100</h5>
-        <h5>50</h5>
-        <h5>20</h5>
-        <h5>10</h5>
-        <h5>5</h5>
-        <h5>2</h5>
-        <h5>1</h5>
-        <h5>0.50</h5>
-        <h5>0.20</h5>
-        <h5>0.10</h5>
-        <h5>0.05</h5>
-        <h5>0.02</h5>
-        <h5>0.01</h5>
-    </div>
-    <div id="screen">
-        <h4>Lea las instrucciones:</h4>
-        <p>Pulse comenzar</p>
-    </div>
+        <h1>Cajero</h1>
+        <div id="billetes">
+                <h5>500</h5>
+                <h5>200</h5>
+                <h5>100</h5>
+                <h5>50</h5>
+                <h5>20</h5>
+                <h5>10</h5>
+                <h5>5</h5>
+                <h5>2</h5>
+                <h5>1</h5>
+                <h5>0.50</h5>
+                <h5>0.20</h5>
+                <h5>0.10</h5>
+                <h5>0.05</h5>
+                <h5>0.02</h5>
+                <h5>0.01</h5>
+        </div>
+        <div id="screen">
+                <h4>Lea las instrucciones:</h4>
+                <p>Pulse comenzar</p>
+        </div>
 
-    <div id="comenzar"><button class="botonLargo" onclick="key ('Start');">comenzar</button></div>
-
-    <div id="container">
+        <div class="comenzar"><button class="botonLargo" onclick="key ('Start');">comenzar</button></div>
+        <div class="comenzar"><button class="botonLargo" onclick="key ('Admin');">Admin</button></div>
+        <!-- <div id="container">-->
 
         <div id="teclaNumericas">
-            <div>
-                
-                <div class="teclado"><button onclick="key ('1');">1</button><button
-                        onclick="key ('2');">2</button><button onclick="key ('3');">3</button></div>
-                <div class="teclado"><button onclick="key ('4');">4</button><button
-                        onclick="key ('5');">5</button><button onclick="key ('5');">6</button></div>
-                <div class="teclado"><button onclick="key ('7');">7</button><button
-                        onclick="key ('8');">8</button><button onclick="key ('9');">9</button></div>
-                <div class="teclado"><button onclick="key ('0');">0</button><button
-                        onclick="key ('.');">.</button><button onclick="key ('I');">-></button></div>
-                <!-- <div class="teclado"><button id="comenzar" onclick="key ('Start');">comenzar</button></div>-->
-            </div>
+                <div>
+
+                        <div class="teclado"><button onclick="key ('1');">1</button><button
+                                        onclick="key ('2');">2</button><button onclick="key ('3');">3</button></div>
+                        <div class="teclado"><button onclick="key ('4');">4</button><button
+                                        onclick="key ('5');">5</button><button onclick="key ('5');">6</button></div>
+                        <div class="teclado"><button onclick="key ('7');">7</button><button
+                                        onclick="key ('8');">8</button><button onclick="key ('9');">9</button></div>
+                        <div class="teclado"><button onclick="key ('0');">0</button><button
+                                        onclick="key ('.');">.</button><button onclick="key ('I');">-></button></div>
+                        <!-- <div class="teclado"><button id="comenzar" onclick="key ('Start');">comenzar</button></div>-->
+                </div>
         </div>
         <div id="teclasMonedas">
-            <div><button class="botonLargo terminado1" onclick="inputPago (0);">Terminado</button></div>
-            <div class="teclado"><button onclick="inputPago (500);">500</button><button
-                    onclick="inputPago (200);">200</button><button onclick="inputPago (100);">100</button></div>
-            <div class="teclado"><button onclick="inputPago (50);">50</button><button
-                    onclick="inputPago (20);">20</button><button onclick="inputPago (10);">10</button></div>
-            <div class="teclado"><button onclick="inputPago (5);">5</button><button
-                    onclick="inputPago (2);">2</button><button onclick="inputPago (1);">1</button></div>
-            <div class="teclado"><button onclick="inputPago (0.50);">0.50</button><button
-                    onclick="inputPago (0.20);">0.20</button><button onclick="inputPago (0.10);">0.10</button></div>
-            <div class="teclado"><button onclick="inputPago (0.05);">0.05</button><button
-                    onclick="inputPago (0.02);">0.02</button><button onclick="inputPago (0.01);">0.01</button></div>
+                <div class="teclado"><button class="botonLargo" onclick="inputPago (0);">Terminado</button></div>
+                <div class="teclado"><button onclick="inputPago (500);">500</button><button
+                                onclick="inputPago (200);">200</button><button onclick="inputPago (100);">100</button>
+                </div>
+                <div class="teclado"><button onclick="inputPago (50);">50</button><button
+                                onclick="inputPago (20);">20</button><button onclick="inputPago (10);">10</button></div>
+                <div class="teclado"><button onclick="inputPago (5);">5</button><button
+                                onclick="inputPago (2);">2</button><button onclick="inputPago (1);">1</button></div>
+                <div class="teclado"><button onclick="inputPago (0.50);">0.50</button><button
+                                onclick="inputPago (0.20);">0.20</button><button
+                                onclick="inputPago (0.10);">0.10</button></div>
+                <div class="teclado"><button onclick="inputPago (0.05);">0.05</button><button
+                                onclick="inputPago (0.02);">0.02</button><button
+                                onclick="inputPago (0.01);">0.01</button></div>
+        </div>
+        <div id="adminPanel">
+                <form id="admin">
+                        <div>
+                                <label>
+                                        <h5>User name</h5><input id="user" type="text">
+                                </label>
+                                <label>
+                                        <h5>password</h5><input id="password" type="text">
+                                </label>
+                        </div>
+                        <div>
+                                <!--<button class="botonLargo" onclick="checkUser (document.getElementById('user').value, document.getElementById('password').value )">Enviar</button>-->
+                                <button class="botonLargo" onclick="key ('Admin2');">Enviar</button>
+
+                        </div>
+                </form>
+        </div>
+        <div id="setCaja">
+                <form id="admin">
+                        <div id="adminContainer">
+                                <div class = "adminColumn">
+                                        <label>
+                                                <h6>billetes de 500</h6><input id="B500" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>billetes de 200</h6><input id="B200" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>billetes de 100</h6><input id="B100" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>billetes de 50</h6><input id="B50" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>billetes de 20</h6><input id="B20" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>billetes de 10</h6><input id="B10" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>billetes de 5</h6><input id="B5" type="number" min="0" max="20">
+                                        </label>
+                                </div>
+                                <div class = "adminColumn">
+                                        <label>
+                                                <h6>monedas de 2</h6><input id="B2" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>monedas de 1</h6><input id="B1" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>monedas de 0.50</h6><input id="B050" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>monedas de 0.20</h6><input id="B020" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>monedas de 0.10</h6><input id="B010" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>monedas de 0.05</h6><input id="B005" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>monedas de 0.02</h6><input id="B002" type="number" min="0" max="20">
+                                        </label>
+                                        <label>
+                                                <h6>monedas de 0.01</h6><input id="B001" type="number" min="0" max="20">
+                                        </label>
+                                        <button class="botonLargo" onclick="key ('Admin2');">Enviar</button>
+                                </div>
+                        </div>
+                        <div>
+                                <!--<button class="botonLargo" onclick="checkUser (document.getElementById('user').value, document.getElementById('password').value )">Enviar</button>-->
+                             
+
+                        </div>
+                </form>
         </div>
 
-    </div>
-    <script src="script.js"></script>
+        <!--</div>-->
+        <script src="script.js"></script>
 
 </body>
 
